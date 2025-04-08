@@ -1,0 +1,73 @@
+#enterSceneBG {
+	-fx-background-image: url("/project/resources/images/sfondo.jpg");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+#loginBtn, #signupBtn, #usernameLogin, #passwordLogin {
+	-fx-background-radius: 3;
+}
+
+.rules-area {
+	-fx-background-color: #f085ce;
+	-fx-border-color: #01040a;
+	-fx-border-radius: 5;
+	-fx-padding: 5px;
+	-fx-background-radius: 5; /* Rounded corners */
+	-fx-text-fill: #01040a;
+}
+.rules-area .content {
+	-fx-background-color:  #f085ce;
+}
+
+/*#leftLoginScreen, #leftSignupScreen {
+	-fx-background-image: url("/application/resources/access/img/bg3.jpg");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}*/
+
+/* Stile per la TextArea con fx:id="codeContainer" */
+#codeContainer, #userInfoTA {
+	 -fx-background-color: #f083b6;
+     -fx-font-family: Actor;
+     -fx-font-size: 14;
+	-fx-text-fill: #01040a;
+     -fx-border-color: transparent;
+     -fx-padding: 0px;
+}
+
+/* Rimuove bordi, angoli arrotondati e ombre dal contenitore di testo */
+#codeContainer .content, #userInfoTA .content {
+	 -fx-background-color: #f083b6;
+}
+
+/* Rimuove ogni ombra che possa apparire sopra e sfondo */
+#codeContainer .scroll-pane .viewport, #userInfoTA .scroll-pane .viewport{
+    -fx-background-color: #d336b3; /* Sfondo del viewport */
+    -fx-background-radius: 0; /* Nessun arrotondamento */
+    -fx-background-insets: 0; /* Rimuove inset del background */
+}
+
+/* Stile dell'Alert che appare quando ci registriamo */
+.custom-alert .content {
+    -fx-background-color: #c131bf; /* Colore di sfondo del contenuto */
+    -fx-padding: 10px;
+}
+
+.custom-alert .label {
+    -fx-text-fill: #e5e9f0; /* Colore del testo */
+    -fx-font-weight: bold;
+}
+
+.custom-alert .button-bar {
+    -fx-background-color: #c131bf; /* Colore di sfondo della barra dei pulsanti */
+}
+
+.custom-alert .button {
+	-fx-background-color: #c131bf;
+	-fx-text-fill: #e5e9f0;
+	-fx-font-weight: bold;
+	-fx-cursor: hand;
+}
